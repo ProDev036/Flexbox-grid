@@ -7,25 +7,76 @@
     <title>Flex Box page 1</title>
     
     <style>
+        
+        .container{
+            background-color: coral;
+            padding:30px 40px;
+            margin:20px auto;
+        }
 
+        .header{
+            height: 100px;
+            background-color: gray;
+            width: 600px;
+            border-radius: 10px;
+            margin:20px auto;
+        }
+        .main-body{
+            border-radius: 10px;
+            display:flex;
+            justify-content: space-between;
+            background-color: aliceblue;
+            padding: 30px;
+            margin: 30px auto;
+            width: 1400px;
+        }
+    
+        .right-bar{
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding:30px;
+            width: 800px;
+            background-color: aquamarine;           
+        }
+        #one,#two,#three,#four,#five,#six{
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            margin:50px;
+            padding:30px;
+            background-color: aliceblue;
+            
+        }
+
+        .left-bar{
+            border-radius: 10px;
+            width: 350px;
+            height: 700px;
+            margin:auto 50px;
+            padding:50px 30px;
+            background-color: blanchedalmond;
+        }
 
     </style>
   
 </head>
   <body>
-    <div class="header"></div>
-    
-    <div class="main-body">
-        <div class="right-bar">
-            <div class="box1 mini"></div>
-            <div class="box2 mini"></div>
-            <div class="box3 mini"></div>
-            <div class="box4 mini"></div>
-            <div class="box5 mini"></div>
-            <div class="box6 mini"></div>
-            </div class="box7 mini"></div>
-        </div>    
-        <div class="left-bar"></div>
-    </div>
+    <div class="container">    
+        <div class="header"></div>
+        
+        <div class="main-body">
+            <div class="right-bar">
+                <div class="mini" id="one"><p>two</p></div>
+                <div class="mini" id="two"><p>one</p></div>
+                <div class="mini" id="three"></div>
+                <div class="mini" id="four"></div>
+                <div class="mini" id="five"></div>
+                <div class="mini" id="six"></div>
+            </div>    
+            <div class="left-bar"></div>
+        </div>
+    </div>    
   </body>
   </html>
