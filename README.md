@@ -1,0 +1,1 @@
+The following folder is created to practice grid, flex, block display, inline and inline-block display properties in detail.
